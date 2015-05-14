@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="utf8"> 
+    <title> DogBlog </title>
+  </head>
+  <body>
+    <div>
+      
+      <header>Josh Wykell's Dog Blog</header>
+      
+      <div id="main_image">
+        <img id="dogs_spooning" src="/assets/images/dogs_spooning.jpg" alt="cute dogs" style="width:1087px;height:370px">
+      </div>
+      
+      <div class="heading_2">
+        <h2>The big brown guy is Miles, and the cute one is Maggie.</h2>
+      </div>
+      
+      <% @data["posts"].each do |post| %>
+        <div class="main-content-wrapper">
+          <h1><%= post["title"] %></h1>
+          
+          <div class="paragraph_1">
+            <p><%= post["body"] %></p>
+          </div>
+          <div id="post_pic">
+            <img src="/assets/images/<%= post["image"] %>" alt="photo of <%= post["name"] %>" height="100" width="150">
+          </div>
+        </div>
+      <% end %>
+
+      <div class="miles_growls">
+        <img id="miles_growls" src="assets/images/miles_growls.jpg" alt="dog growling" style="width:306px;height:230px">
+      </div>
+
+      <div class="maggie_bites">
+        <img id="maggie_bites" src="/assets/images/maggie_bites.jpg" alt="maggie_bites" style="width:306px;height:230px">
+      </div>
+
+
+      <div class="heading_3">
+          <h3>Gotta Love Em?</h3>
+      </div>
+  
+    
+    </div>
+    <footer>copyright 2015 all rights reserved patent pending TM</footer>
+    </div>
+  
+  </body>
+</html>

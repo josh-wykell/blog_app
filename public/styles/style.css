@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #bde1ff;
+  color: #bd3900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 50px; 
+}
+
+.main-content-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.heading_2, 
+.paragraph_1{
+  display: table-cell;
+  padding: 20px 30px;
+}
+
+.heading_2 {
+  width:30%;
+}
+  
+.heading_2 h2 {
+  max-width: 200px;
+}
+
+.paragraph_1 {
+  margin-right:300px; 
+  width:70%;
+}
+
+
+.paragraph_1 p {
+  max-width: 500px;
+}
+
+.heading_3 {
+  display: table;
+  width: 100%;
+}
+.heading_3 {
+  vertical-align:bottom;
+  text-align:right;
+}
+
+.miles_growls {
+  margin-left: 175px;
+}
+
+.maggie_bites {
+  margin-right:175px;
+  text-align:right;
+}
+
+footer { 
+  font-style: oblique;
+  font-size: 10px;
+}
+
+#main_image img {
+  display:block;
+  margin: 0 auto;
+}
